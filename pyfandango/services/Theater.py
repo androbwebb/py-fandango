@@ -10,6 +10,7 @@ class Theater():
         self.description = description
         self.movies = {}
         self.id = ""
+        self.scraped = False
         if not scrape:
             self.parse_description()
         else:
@@ -50,5 +51,11 @@ class Theater():
             new_movie = Movie(movie_name, movie_id, genre=movie_genre, showtimes=showtimes)
             self.movies.update({movie_name: new_movie})
 
+        self.scraped = True
+
     def get_movie_names(self):
         return self.movies.keys()
+
+    def scrape_if_not_scraped(self):
+        if not self.scraped:
+            self.scrape()
