@@ -1,5 +1,6 @@
 # py-fandango
 A fandango feed parser for Python
+What makes this library different is the ability to [switch to scraping](https://github.com/androbwebb/pyfandango/blob/master/README.md#oh-so-you-want-showtimes-too-huh) for a portion of the site that isn't accessible to the API
 
 ## Installation
 `pip install git+git://github.com/androbwebb/pyfandango.git`
