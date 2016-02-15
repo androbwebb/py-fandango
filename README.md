@@ -16,7 +16,7 @@ f.theaters_near("02135")  # 02135 = Boston
 for t in f.theaters:
   print t.title
   for m in t.movies:
-    # Movies are stores in Theater.movies as key => value. <Movie Name> => <Movie Object>. For quick lookups
+    # Movies are stored in Theater.movies as key => value. <Movie Name> => <Movie Object>. For quick lookups
     print "\t" + m
 ```
 
