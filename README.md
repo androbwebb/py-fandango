@@ -6,7 +6,7 @@ What makes this library different is the ability to [switch to scraping](https:/
 `pip install git+git://github.com/androbwebb/pyfandango.git`
 
 #### Example
-```
+```python
 from pyfandango.Fandango import Fandango
 
 f = Fandango()
@@ -46,7 +46,7 @@ Fandango API seems to be down/inactive or maybe they're just denying all applica
 
 #### Examples
 - Want to find out when a movie is playing at a given theater:
-```
+```python
 from pyfandango.Fandango import Fandango
 
 def find_movie(movie_name, theater_id, zip_code):
